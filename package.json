@@ -1,0 +1,22 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testrun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sklevtsov/homework.git"
+  },
+  "author": "sklevstov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sklevtsov/homework/issues"
+  },
+  "homepage": "https://github.com/sklevtsov/homework#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
