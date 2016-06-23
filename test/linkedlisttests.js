@@ -45,3 +45,4 @@ describe('LinkedList', function () {
         //console.log(Node.isCircular(node1));
     });
 });
+
