@@ -1,3 +1,5 @@
+'use strict';
+
 var assert = require('chai').assert;
 var Node = require('../../homework/index');
 
@@ -12,7 +14,7 @@ describe('LinkedList', function () {
     it('getNextTotal is a function', function(){
         assert.typeOf(Node.getNextTotal, 'function', 'getNextTotal is a function');
     });
-    it('check that "value", is a getter', function(){
+    it('check that "value" is a getter', function(){
         var node1 = new Node(5);
         assert.strictEqual(node1.value, 5);
     });
@@ -27,7 +29,7 @@ describe('LinkedList', function () {
         assert.strictEqual(Node.getNextTotal(node1), 3);
         //console.log(Node.getNextTotal(node1) + " node(s) next in linked list");
     });
-    it('isCircular', function(){
+    it('check function isCircular and find loop in list', function(){
         var node1 = new Node(1);
         var node2 = new Node(2);
         var node3 = new Node(3);

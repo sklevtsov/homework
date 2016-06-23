@@ -49,7 +49,7 @@ Node.isCircular = function(node){
     var fastNode = node.next;
     var i=1;
     while (slowNode && fastNode){
-        console.log(i + ":" + slowNode.value + " " + fastNode.value);
+        //console.log(i + ":" + slowNode.value + " " + fastNode.value);
         if (slowNode == fastNode) return true;
         if(i%3==0) slowNode = slowNode.next;
         i++;
