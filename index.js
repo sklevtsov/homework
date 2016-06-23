@@ -19,7 +19,7 @@ Node.prototype = {
 
 Node.getNextTotal = function(node){
     var currentNode = node;
-    var i=0;
+    var i = 0;
     if (Node.isCircular(node)) {
         throw new Error("Infinite cycle. Your list has loop.")
     }
