@@ -5,8 +5,6 @@ function Node(value) {
     this.next = null;
 }
 
-module.exports = Node;
-
 Node.prototype = {
     addNext: function(node) {
         this.next = node;
@@ -42,3 +40,5 @@ Node.isCircular = function(node){
     }
     return false;
 };
+
+module.exports = Node;
