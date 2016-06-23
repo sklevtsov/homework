@@ -36,7 +36,7 @@ Node.getNextTotal = function(node){
 //    var fastNode1 = node;
 //    var fastNode2 = node;
 //    while ((slowNode) && (fastNode1 = fastNode2.next) && (fastNode2 = fastNode1.next)){
-//        //console.log(slowNode.value + "_" + fastNode1.value + "_" + fastNode2.value);
+//        console.log(slowNode.value + "_" + fastNode1.value + "_" + fastNode2.value);
 //        if (slowNode == fastNode1 || slowNode == fastNode2) return true;
 //
 //        slowNode = slowNode.next;
@@ -49,7 +49,7 @@ Node.isCircular = function(node){
     var fastNode = node.next;
     var i=1;
     while (slowNode && fastNode){
-        //console.log(i + ":" + slowNode.value + " " + fastNode.value);
+        console.log(i + ":" + slowNode.value + " " + fastNode.value);
         if (slowNode == fastNode) return true;
         if(i%3==0) slowNode = slowNode.next;
         i++;
