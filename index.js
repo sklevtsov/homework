@@ -21,8 +21,7 @@ Node.getNextTotal = function(node){
     var currentNode = node;
     var i=0;
     if (Node.isCircular(node)) {
-        return i = -1;
-        //throw new Error("Infinite cycle. Your list has loop.")
+        throw new Error("Infinite cycle. Your list has loop.")
     }
     while(currentNode.next){
         i++;
@@ -31,29 +30,15 @@ Node.getNextTotal = function(node){
     return i;
 };
 
-//Node.isCircular = function(node){
-//    var slowNode = node;
-//    var fastNode1 = node;
-//    var fastNode2 = node;
-//    while ((slowNode) && (fastNode1 = fastNode2.next) && (fastNode2 = fastNode1.next)){
-//        console.log(slowNode.value + "_" + fastNode1.value + "_" + fastNode2.value);
-//        if (slowNode == fastNode1 || slowNode == fastNode2) return true;
-//
-//        slowNode = slowNode.next;
-//    }
-//    return false;
-//};
-
 Node.isCircular = function(node){
     var slowNode = node;
     var fastNode = node.next;
-    var i=1;
-    while (slowNode && fastNode){
-        //console.log(i + ":" + slowNode.value + " " + fastNode.value);
+    var i = 1;
+    while (slowNode && fastNode && fastNode.next){
         if (slowNode == fastNode) return true;
-        if(i%3==0) slowNode = slowNode.next;
+            slowNode = slowNode.next;
+            fastNode = fastNode.next.next;
         i++;
-        fastNode = fastNode.next;
     }
     return false;
 };
