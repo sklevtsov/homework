@@ -1,6 +1,6 @@
 # linked-list
 
-[![Build Status](https://img.shields.io/travis/sklevtsov/homework.svg?style=flat)](https://travis-ci.org/sklevtsov/homework.svg)
+[![Build Status](https://travis-ci.org/sklevtsov/homework.svg?branch=master)](https://travis-ci.org/sklevtsov/homework)
 
 - Node()
 - Node.prototype.addNext()
